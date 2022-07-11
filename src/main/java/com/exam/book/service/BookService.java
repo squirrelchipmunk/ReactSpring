@@ -28,7 +28,7 @@ public class BookService {
 	}
 	
 	@Transactional (readOnly = true)
-	public List<Book> 모두가져하기(Book book) {
+	public List<Book> 모두가져오기() {
 		return bookRepository.findAll();
 	}
 	
